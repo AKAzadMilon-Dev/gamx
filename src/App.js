@@ -1,9 +1,22 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Rootlayout from "./components/layout/Rootlayout";
+import Home from "./pages/Home";
+
+let router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Rootlayout />}>
+      <Route index element={<Home />} />
+    </Route>
+  )
+);
+
 function App() {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
