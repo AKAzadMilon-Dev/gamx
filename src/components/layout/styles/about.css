@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../../../assets/videos/anime.mp4") format(woff2);
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.bg-overlay {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/images/overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
