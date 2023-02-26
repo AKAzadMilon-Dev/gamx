@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import "./banner.css";
+import "../layout/styles/banner.css";
 import Image from "./Image";
 import Navber from "./Navber";
 
@@ -38,9 +38,9 @@ const Banner = () => {
             </div>
             <div className="flex w-full items-center justify-end">
               <motion.h1
-                animate={{ x: [50, 150, 50], opacity: 2, scale: 1 }}
+                animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
                 transition={{
-                  duration: 3,
+                  duration: 5,
                   delay: 0.5,
                   ease: [0.5, 0.71, 1, 1.5],
                 }}
