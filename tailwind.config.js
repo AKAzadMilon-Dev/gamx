@@ -18,7 +18,8 @@ module.exports = {
         blue:"#4F06FD",
         red: "#FB5A08",
         green: "#D5E81A",
-        purpole: "FB06FC",
+        purpole: "#FB06FC",
+        roundBlack: "#141635"
       },
     },
   },
