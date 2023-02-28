@@ -6,6 +6,7 @@ import ninja from "../../assets/videos/anime.mp4";
 import aboutimg from "../../assets/images/aboutimg.png";
 import Heading from "./Heading";
 import aboutbtn from "../../assets/images/aboutbtn.png";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
@@ -16,7 +17,9 @@ const About = () => {
         <Container>
           <div className="flex w-full items-center justify-between">
             <div className="w-[40%]">
-              <Image imgsrc={aboutimg} />
+              <Fade left>
+                <Image imgsrc={aboutimg} />
+              </Fade>
             </div>
             <div className="w-[60%]">
               <div></div>

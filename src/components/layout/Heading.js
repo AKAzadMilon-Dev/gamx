@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ title }) => {
+const Heading = ({ title, className }) => {
   return (
     <h2 className="font-poppins text-5xl font-bold uppercase text-white">
       {title}

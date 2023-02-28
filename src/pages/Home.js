@@ -3,6 +3,7 @@ import About from "../components/layout/About";
 import Banner from "../components/layout/Banner";
 import Buy from "../components/layout/Buy";
 import Popular from "../components/layout/Popular";
+import RankBoost from "../components/layout/RankBoost";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Popular/>
       <About/>
       <Buy/>
+      <RankBoost/>
     </>
   );
 };

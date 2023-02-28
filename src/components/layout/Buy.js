@@ -4,13 +4,16 @@ import Heading from "./Heading";
 import Image from "./Image";
 import buyimg from "../../assets/images/buyimg.png";
 import buybtn from "../../assets/images/buybtn.png";
+import "./styles/buy.css";
 
 const Buy = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-40">
       <Container>
-        <Heading title="How to Buy?" />
-        <div className="flex w-full items-center justify-between py-20">
+        <div className="w-full flex justify-center">
+          <Heading title="How to Buy?" />
+        </div>
+        <div className="flex w-full items-center justify-between ">
           <div className="flex w-[50%] flex-col gap-y-8">
             <div className="font-regular flex w-full items-center gap-x-8 font-poppins text-base text-white">
               <p className="rounded-full bg-roundBlack py-3 px-4">01</p>
@@ -41,8 +44,10 @@ const Buy = () => {
               <Image className="cursor-pointer" imgsrc={buybtn} />
             </div>
           </div>
-          <div className="w-[50%]">
-            <Image imgsrc={buyimg} />
+          <div className="at-container">
+            <div className="at-item w-[50%]">
+              <Image imgsrc={buyimg} />
+            </div>
           </div>
         </div>
       </Container>
